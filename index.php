@@ -3,33 +3,62 @@
         <title>Tic Tac Toe</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <style>
+            h1, small {
+                text-align: center;
+            }
+            a.btn {
+                width: 30%;
+                margin: 0 auto;
+                display: block;
+            }
+        </style>
     </head>
     <body>
-    <?php
-    require_once 'Game.php';
+        <?php
+            require_once 'Game.php';
+            ob_start();
 
-    if (isset($_GET['board']))
-    {
-        echo "Game in progress<br>";
-        $game = new Game($_GET['board']);
-    }
-    else
-    {
-        echo "Creating new game<br>";
-        $game = new Game();
-    }
+            if (isset($_GET['board']))
+            {
+                $board = $_GET['board'];
+                if ( !preg_match("/[xo-]{9}/", $board) )
+                    die("Invalid game in progress");
 
-    $game->pick_move();
-    $game->display();
+                echo "<header class='page-header'><h1>Game in progress<br>";
+                $game = new Game($_GET['board']);
+            }
+            else
+            {
+                echo "<header class='page-header'><h1>New game<br>";
+                $game = new Game();
+            }
 
-    if ($game->winner('x'))
-        echo 'You win. Lucky guesses!';
-    else if ($game->winner('o'))
-        echo 'I win. Muahahahaha';
-    else
-        echo 'No winner yet, but you are losing.';
-    ?>
-    <br><hr>
-    <a onclick="window.location.assign('index.php')">Replay</a>
+            if ($game->winner('o'))
+                echo "<small>You win. Lucky guesses!</small></h1></header>";
+            else if ($game->winner('x'))
+                echo "<small>I win. Muahahahaha</small></h1></header>";
+            else
+            {
+                $game->pick_move();
+                if ($game->winner('x'))
+                    echo "<small>I win. Muahahahaha</small></h1></header>";
+                else
+                {
+                    echo "<small>No winner yet, but you are losing.</small></h1></header>";
+                    $game->display();
+                }
+            }
+
+            ob_end_flush();
+        ?>
+
+        <br><hr>
+
+<!--        <div class="btn-group btn-group-justified" role="group" aria-label="...">-->
+            <a class="btn btn-default" role="button" onclick="window.location.assign('index.php')">Replay</a>
+<!--        </div>-->
     </body>
 </html>

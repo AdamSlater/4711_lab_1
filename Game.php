@@ -45,14 +45,14 @@ class Game {
     }
 
     function display() {
-        echo '<table style="font-size:large; font-weight:bold">';
+        echo '<div class="container"><table class="table table-bordered table-responsive text-center" style="font-size:large; font-weight:bold">';
         echo '<tr>'; // open the first row
         for ($pos=0; $pos<9;$pos++) {
             echo $this->show_cell($pos);
             if ($pos %3 == 2) echo '</tr><tr>'; // start a new row for the next square
         }
         echo '</tr>'; // close the last row
-        echo '</table>';
+        echo '</table></div>';
     }
 
     function show_cell($which) {
@@ -70,32 +70,19 @@ class Game {
 
     function pick_move(){
         $options = array();
-        $numO    = 0;
-        $numX    = 0;
         for($row=0; $row<3; $row++)
             for($col=0; $col<3; $col++)
-            {
-                if ($this->position[3*$row+$col] == 'x')
-                    $numX++;
-                if ($this->position[3*$row+$col] == 'o')
-                    $numO++;
                 if ($this->position[3*$row+$col] == '-')
                     array_push($options, 3*$row+$col);
-            }
 
+        if (empty($options))
+            echo "<script>alert('Game Over');</script>";
 
-        setcookie("X", $numX);
-        setcookie("O", $numO);
+        $choice = rand(0, sizeof($options));
 
-        if ($numX - $numO == 0){
-            if (empty($options))
-                echo "<script>alert('Game Over');</script>";
+        $this->position[$choice] = 'x';
 
-            $choice = rand(0, sizeof($options));
+//        header('Location: ?board=' . implode($this->position));
 
-            $this->position[$choice] = 'x';
-
-            header('Location: ?board=' . implode($this->position));
-        }
     }
 }
