@@ -45,7 +45,7 @@ class Game {
     }
 
     function display() {
-        echo '<div class="container"><table class="table table-bordered table-responsive text-center" style="font-size:large; font-weight:bold">';
+        echo '<div class="container"><table class="table table-bordered table-responsive text-center">';
         echo '<tr>'; // open the first row
         for ($pos=0; $pos<9;$pos++) {
             echo $this->show_cell($pos);
@@ -70,19 +70,31 @@ class Game {
 
     function pick_move(){
         $options = array();
+        $x = $o = 0;
         for($row=0; $row<3; $row++)
             for($col=0; $col<3; $col++)
-                if ($this->position[3*$row+$col] == '-')
+            {
+                if ($this->position[3*$row+$col] == 'x')
+                    $x++;
+                else if ($this->position[3*$row+$col] == 'o')
+                    $o++;
+                else
                     array_push($options, 3*$row+$col);
+            }
 
         if (empty($options))
-            echo "<script>alert('Game Over');</script>";
+            echo "<i>The game ended in a tie, please press replay.</i>";
 
-        $choice = rand(0, sizeof($options));
+        if ( $x <= $o )
+        {
+            $choice = rand(1, sizeof($options));
+            $this->position[$options[$choice-1]] = 'x';
 
-        $this->position[$choice] = 'x';
-
-//        header('Location: ?board=' . implode($this->position));
-
+            if (sizeof($options) == 1)
+                if (!$this->winner('x'))
+                    die("The game was tie :(<br><hr><a class=\"btn btn-default\" role=\"button\" onclick=\"window.location.assign('index.php')\">Replay</a>");
+        }
     }
+
+
 }

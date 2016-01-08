@@ -14,6 +14,11 @@
                 margin: 0 auto;
                 display: block;
             }
+            table {
+                font-weight: bold;
+                font-size: x-large;
+                background-color: rgba(120,120,120,0.15);
+            }
         </style>
     </head>
     <body>
@@ -27,7 +32,7 @@
                 if ( !preg_match("/[xo-]{9}/", $board) )
                     die("Invalid game in progress");
 
-                echo "<header class='page-header'><h1>Game in progress<br>";
+                echo "<header class='page-header'><h1>Game in progress...<br>";
                 $game = new Game($_GET['board']);
             }
             else
@@ -56,9 +61,6 @@
         ?>
 
         <br><hr>
-
-<!--        <div class="btn-group btn-group-justified" role="group" aria-label="...">-->
-            <a class="btn btn-default" role="button" onclick="window.location.assign('index.php')">Replay</a>
-<!--        </div>-->
+         <a class="btn btn-default" role="button" onclick="window.location.assign('index.php')">Replay</a>
     </body>
 </html>

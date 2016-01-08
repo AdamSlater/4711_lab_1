@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="754f402e-ff66-4b3e-85f4-07430324d2c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.php" afterPath="$PROJECT_DIR$/Game.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="1.iws" />
@@ -25,25 +26,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.078461535">
-              <caret line="6" column="108" selection-start-line="6" selection-start-column="108" selection-end-line="6" selection-end-column="108" />
+            <state vertical-scroll-proportion="-23.038462">
+              <caret line="63" column="106" selection-start-line="62" selection-start-column="12" selection-end-line="63" selection-end-column="106" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.041667">
-              <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.7929448">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="n#winner#0;n#Game#0;n#!!top" expanded="false" />
+                <element signature="n#display#0;n#Game#0;n#!!top" expanded="false" />
                 <element signature="n#show_cell#0;n#Game#0;n#!!top" expanded="false" />
-                <marker date="1452222174000" expanded="true" signature="1316:1349" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -58,8 +59,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/game.php" />
-        <option value="$PROJECT_DIR$/Game.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Game.php" />
       </list>
     </option>
   </component>
@@ -188,7 +189,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452223096604</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="removed integrity from cdn link">
+      <created>1452223140882</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1452223140882</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -230,7 +237,8 @@
     <MESSAGE value="implemented game class &amp; gui" />
     <MESSAGE value="add ai concept and separated game class" />
     <MESSAGE value="fixed game logic (properly checks for winner then displays...)&#10;and added style" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed game logic (properly checks for winner then displays...)&#10;and added style" />
+    <MESSAGE value="removed integrity from cdn link" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed integrity from cdn link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -247,23 +255,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.041667">
-          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
-          <folding>
-            <element signature="n#winner#0;n#Game#0;n#!!top" expanded="false" />
-            <element signature="n#show_cell#0;n#Game#0;n#!!top" expanded="false" />
-            <marker date="1452222174000" expanded="true" signature="1316:1349" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-23.038462">
+          <caret line="63" column="106" selection-start-line="62" selection-start-column="12" selection-end-line="63" selection-end-column="106" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/Game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.078461535">
-          <caret line="6" column="108" selection-start-line="6" selection-start-column="108" selection-end-line="6" selection-end-column="108" />
-          <folding />
+        <state vertical-scroll-proportion="0.7929448">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="n#winner#0;n#Game#0;n#!!top" expanded="false" />
+            <element signature="n#display#0;n#Game#0;n#!!top" expanded="false" />
+            <element signature="n#show_cell#0;n#Game#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
