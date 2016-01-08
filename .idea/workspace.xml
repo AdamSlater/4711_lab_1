@@ -29,8 +29,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.038462">
-              <caret line="63" column="106" selection-start-line="62" selection-start-column="12" selection-end-line="63" selection-end-column="106" />
+            <state vertical-scroll-proportion="-11.923077">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -39,12 +39,11 @@
       <file leaf-file-name="Game.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7929448">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.24233128">
+              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
               <folding>
                 <element signature="n#winner#0;n#Game#0;n#!!top" expanded="false" />
-                <element signature="n#display#0;n#Game#0;n#!!top" expanded="false" />
-                <element signature="n#show_cell#0;n#Game#0;n#!!top" expanded="false" />
+                <marker date="1452226121000" expanded="true" signature="1843:1860" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -195,7 +194,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452223140882</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added tie functionality and corrected ai (waits for previous turn to end)">
+      <created>1452224920098</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1452224920098</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -238,11 +243,12 @@
     <MESSAGE value="add ai concept and separated game class" />
     <MESSAGE value="fixed game logic (properly checks for winner then displays...)&#10;and added style" />
     <MESSAGE value="removed integrity from cdn link" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed integrity from cdn link" />
+    <MESSAGE value="added tie functionality and corrected ai (waits for previous turn to end)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tie functionality and corrected ai (waits for previous turn to end)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -257,20 +263,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.038462">
-          <caret line="63" column="106" selection-start-line="62" selection-start-column="12" selection-end-line="63" selection-end-column="106" />
+        <state vertical-scroll-proportion="-11.923077">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7929448">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.24233128">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
           <folding>
             <element signature="n#winner#0;n#Game#0;n#!!top" expanded="false" />
-            <element signature="n#display#0;n#Game#0;n#!!top" expanded="false" />
-            <element signature="n#show_cell#0;n#Game#0;n#!!top" expanded="false" />
+            <marker date="1452226121000" expanded="true" signature="1843:1860" placeholder="..." />
           </folding>
         </state>
       </provider>

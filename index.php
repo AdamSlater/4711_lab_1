@@ -9,10 +9,16 @@
             h1, small {
                 text-align: center;
             }
+            a:not(btn) {
+               color: #336fff;
+            }
             a.btn {
                 width: 30%;
                 margin: 0 auto;
                 display: block;
+            }
+            a:hover {
+                text-decoration: none;
             }
             table {
                 font-weight: bold;

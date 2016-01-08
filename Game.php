@@ -57,8 +57,9 @@ class Game {
 
     function show_cell($which) {
         $token = $this->position[$which];
+        $c = ($token == 'x') ? 'rgba(255,0,0,0.4)' : 'rgba(0,255,0,0.4)';
         // deal with the easy case
-        if ($token <> '-') return '<td>'.$token.'</td>';
+        if ($token <> '-') return "<td style='background-color:$c'>".$token.'</td>';
         // now the hard case
         $this->newposition = $this->position; // copy the original
         $this->newposition[$which] = 'o'; // this would be their move
