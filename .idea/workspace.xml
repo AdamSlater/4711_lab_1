@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="754f402e-ff66-4b3e-85f4-07430324d2c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.php" afterPath="$PROJECT_DIR$/Game.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="1.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.032307692">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.078461535">
+              <caret line="6" column="108" selection-start-line="6" selection-start-column="108" selection-end-line="6" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -183,7 +182,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452217910599</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed game logic (properly checks for winner then displays...)&#10;and added style">
+      <created>1452223096604</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1452223096604</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -224,7 +229,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented game class &amp; gui" />
     <MESSAGE value="add ai concept and separated game class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ai concept and separated game class" />
+    <MESSAGE value="fixed game logic (properly checks for winner then displays...)&#10;and added style" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed game logic (properly checks for winner then displays...)&#10;and added style" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -255,8 +261,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032307692">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.078461535">
+          <caret line="6" column="108" selection-start-line="6" selection-start-column="108" selection-end-line="6" selection-end-column="108" />
           <folding />
         </state>
       </provider>
