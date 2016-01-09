@@ -29,7 +29,7 @@
     </head>
     <body>
         <?php
-            require_once 'Game.php';
+            require_once 'game.php';
             ob_start();
 
             if (isset($_GET['board']))
